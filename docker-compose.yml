@@ -1,0 +1,14 @@
+services:
+
+  pg:
+    image: postgres
+    environment:
+      POSTGRES_DB: shop
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5433"
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
